@@ -5,6 +5,7 @@ Implementacion tarea 1.2
 @author: Daniela Blanco
 """
 
+import pandas as pd
 import matplotlib.pyplot as plt
 
 """
@@ -17,7 +18,7 @@ The anomalies should be printed, plotted or presented in some other way that is 
 appropriate.
 """
 
-data = pd.read_csv('F:/muttdata/desafio/serie_BTC_CNY.csv')
+data = pd.read_csv('serie_BTC_CNY.csv')
 data = data.set_index('date')
 
 data[['open_cny', 'high_cny', 'low_cny', 'close_cny']].boxplot()
